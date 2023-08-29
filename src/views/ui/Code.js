@@ -1,6 +1,7 @@
 import Paging from "../../components/dashboard/Paging";
 import { Row, Col, Table, Card, CardTitle, CardBody } from "reactstrap";
 
+
 const Code = () => {
   return (
     <Row>

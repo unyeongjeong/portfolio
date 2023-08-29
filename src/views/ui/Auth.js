@@ -1,5 +1,5 @@
 import Paging from "../../components/dashboard/Paging";
-import { Row, Col, Table, Card, CardTitle, CardBody } from "reactstrap";
+import { Col, Table, Card, CardTitle, CardBody } from "reactstrap";
 
 const greeting = 'map<br/>arr.map((elem, index) => { <br/>console.log()<br/>});';
 

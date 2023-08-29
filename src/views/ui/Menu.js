@@ -1,188 +1,63 @@
-import { Badge, Button, Card, CardBody, CardTitle, Row, Col } from "reactstrap";
+import { Table, Card, CardBody, CardTitle, Col } from "reactstrap";
+import Paging from "../../components/dashboard/Paging";
 
 const Menu = () => {
+  // For Dismiss Button with Alert
   return (
     <div>
       {/* --------------------------------------------------------------------------------*/}
-      {/* Row*/}
+      {/* Card-1*/}
       {/* --------------------------------------------------------------------------------*/}
-      <Row>
-        <Col xs="12" md="12" sm="12">
-          {/* --------------------------------------------------------------------------------*/}
-          {/* Card-1*/}
-          {/* --------------------------------------------------------------------------------*/}
+      <Card>
+        <Col lg="12">
           <Card>
             <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-              Badges
+              <i className="bi bi-card-text me-2">검색어</i>
+              <input type={"text"}></input>
             </CardTitle>
             <CardBody className="">
-              <div>
-                <h1>
-                  Heading <Badge color="secondary">New</Badge>
-                </h1>
-                <h2>
-                  Heading <Badge color="secondary">New</Badge>
-                </h2>
-                <h3>
-                  Heading <Badge color="secondary">New</Badge>
-                </h3>
-                <h4>
-                  Heading <Badge color="secondary">New</Badge>
-                </h4>
-                <h5>
-                  Heading <Badge color="secondary">New</Badge>
-                </h5>
-                <h6>
-                  Heading <Badge color="secondary">New</Badge>
-                </h6>
-              </div>
+              <Table bordered hover>
+                <thead>
+                  <tr>
+                    <th><input type={"checkbox"}></input></th>
+                    <th>순번</th>
+                    <th>메뉴명</th>
+                    <th>메뉴내용</th>
+                    <th>메뉴사용여부</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><input type={"checkbox"}></input></th>
+                    <td>3</td>
+                    <td>관리자</td>
+                    <td>전체 관리자 권한</td>
+                    <td>사용</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type={"checkbox"}></input></th>
+                    <td>2</td>
+                    <td>일반사용자</td>
+                    <td>일반 사용자 권한</td>
+                    <td>사용</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type={"checkbox"}></input></th>
+                    <td>1</td>
+                    <td>메뉴 관리자</td>
+                    <td>메뉴 관리자 권한</td>
+                    <td>미사용</td>
+                  </tr>
+                </tbody>
+              </Table>
             </CardBody>
           </Card>
+          <Paging />
         </Col>
-        <Col xs="12" md="12" sm="12">
-          {/* --------------------------------------------------------------------------------*/}
-          {/* Card-2*/}
-          {/* --------------------------------------------------------------------------------*/}
-          <Card>
-            <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-              Badges with Button
-            </CardTitle>
-            <CardBody className="">
-              <div>
-                <Button color="primary" outline>
-                  Notifications <Badge color="secondary">1</Badge>
-                </Button>
-                <Button color="secondary" className="ms-3" outline>
-                  Notifications <Badge color="secondary">2</Badge>
-                </Button>
-                <Button color="info" className="ms-3" outline>
-                  Notifications <Badge color="secondary">3</Badge>
-                </Button>
-                <Button color="warning" className="ms-3" outline>
-                  Notifications <Badge color="secondary">4</Badge>
-                </Button>
-                <Button color="danger" className="ms-3" outline>
-                  Notifications <Badge color="secondary">5</Badge>
-                </Button>
-              </div>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col xs="12" md="6">
-          {/* --------------------------------------------------------------------------------*/}
-          {/* Card-3*/}
-          {/* --------------------------------------------------------------------------------*/}
-          <Card>
-            <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-              Badges with Contextual variations
-            </CardTitle>
-            <CardBody className="">
-              <div>
-                <Badge color="primary">Primary</Badge>
-                <Badge color="secondary" className="ms-3">
-                  Secondary
-                </Badge>
-                <Badge color="success" className="ms-3">
-                  Success
-                </Badge>
-                <Badge color="danger" className="ms-3">
-                  Danger
-                </Badge>
-                <Badge color="warning" className="ms-3">
-                  Warning
-                </Badge>
-                <Badge color="info" className="ms-3">
-                  Info
-                </Badge>
-                <Badge color="light" className="ms-3">
-                  Light
-                </Badge>
-                <Badge color="dark" className="ms-3">
-                  Dark
-                </Badge>
-              </div>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col xs="12" md="6">
-          {/* --------------------------------------------------------------------------------*/}
-          {/* Card-4*/}
-          {/* --------------------------------------------------------------------------------*/}
-          <Card>
-            <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-              Badges with Pills
-            </CardTitle>
-            <CardBody className="">
-              <div>
-                <Badge color="primary" pill>
-                  Primary
-                </Badge>
-                <Badge color="secondary" className="ms-3" pill>
-                  Secondary
-                </Badge>
-                <Badge color="success" className="ms-3" pill>
-                  Success
-                </Badge>
-                <Badge color="danger" className="ms-3" pill>
-                  Danger
-                </Badge>
-                <Badge color="warning" className="ms-3" pill>
-                  Warning
-                </Badge>
-                <Badge color="info" className="ms-3" pill>
-                  Info
-                </Badge>
-                <Badge color="light" className="ms-3" pill>
-                  Light
-                </Badge>
-                <Badge color="dark" className="ms-3" pill>
-                  Dark
-                </Badge>
-              </div>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col xs="12" md="6">
-          {/* --------------------------------------------------------------------------------*/}
-          {/* Card-5*/}
-          {/* --------------------------------------------------------------------------------*/}
-          <Card>
-            <CardTitle tag="h6" className="border-bottom p-3 mb-0">
-              Badges with Links
-            </CardTitle>
-            <CardBody className="">
-              <div>
-                <Badge href="" color="primary">
-                  Primary
-                </Badge>
-                <Badge href="" color="secondary" className="ms-3">
-                  Secondary
-                </Badge>
-                <Badge href="" color="success" className="ms-3">
-                  Success
-                </Badge>
-                <Badge href="" color="danger" className="ms-3">
-                  Danger
-                </Badge>
-                <Badge href="" color="warning" className="ms-3">
-                  Warning
-                </Badge>
-                <Badge href="" color="info" className="ms-3">
-                  Info
-                </Badge>
-                <Badge href="" color="light" className="ms-3">
-                  Light
-                </Badge>
-                <Badge href="" color="dark" className="ms-3">
-                  Dark
-                </Badge>
-              </div>
-            </CardBody>
-          </Card>
-        </Col>
-      </Row>
+      </Card>
+
       {/* --------------------------------------------------------------------------------*/}
-      {/* Row*/}
+      {/* End Inner Div*/}
       {/* --------------------------------------------------------------------------------*/}
     </div>
   );
