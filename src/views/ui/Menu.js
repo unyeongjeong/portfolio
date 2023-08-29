@@ -1,6 +1,6 @@
 import { Badge, Button, Card, CardBody, CardTitle, Row, Col } from "reactstrap";
 
-const Badges = () => {
+const Menu = () => {
   return (
     <div>
       {/* --------------------------------------------------------------------------------*/}
@@ -188,4 +188,4 @@ const Badges = () => {
   );
 };
 
-export default Badges;
+export default Menu;

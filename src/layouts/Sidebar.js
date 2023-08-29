@@ -15,17 +15,17 @@ const navigation = [
   },
   {
     title: "회원 관리",
-    href: "/about",
+    href: "/member",
     icon: "bi bi-people",
   },
   {
     title: "권한 관리",
-    href: "/alerts",
+    href: "/auth",
     icon: "bi bi-bell",
   },
   {
     title: "메뉴 관리",
-    href: "/badges",
+    href: "/menu",
     icon: "bi bi-patch-check",
   },
   {
@@ -40,7 +40,7 @@ const navigation = [
   },
   {
     title: "코드 관리",
-    href: "/cards",
+    href: "/code",
     icon: "bi bi-card-text",
   },
   {
@@ -50,7 +50,7 @@ const navigation = [
   },
   {
     title: "로그 관리",
-    href: "/breadcrumbs",
+    href: "/log",
     icon: "bi bi-link",
   },
 ];

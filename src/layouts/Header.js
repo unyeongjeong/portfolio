@@ -64,8 +64,8 @@ const Header = () => {
             </Link>
           </NavItem>
           <NavItem>
-            <Link to="/about" className="nav-link">
-              About
+            <Link to="/member" className="nav-link">
+              Member
             </Link>
           </NavItem>
           <UncontrolledDropdown inNavbar nav>

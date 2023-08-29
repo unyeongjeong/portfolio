@@ -7,15 +7,15 @@ const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
 /***** Pages ****/
 
 const Dashboard = lazy(() => import("../views/Dashboard.js"));
-const About = lazy(() => import("../views/About.js"));
-const Alerts = lazy(() => import("../views/ui/Alerts"));
-const Badges = lazy(() => import("../views/ui/Badges"));
+const Member = lazy(() => import("../views/Member.js"));
+const Auth = lazy(() => import("../views/ui/Auth.js"));
+const Menu = lazy(() => import("../views/ui/Menu.js"));
 const Buttons = lazy(() => import("../views/ui/Buttons"));
-const Cards = lazy(() => import("../views/ui/Cards"));
+const Code = lazy(() => import("../views/ui/Code.js"));
 const Grid = lazy(() => import("../views/ui/Grid"));
 const Tables = lazy(() => import("../views/ui/Tables"));
 const Forms = lazy(() => import("../views/ui/Forms"));
-const Breadcrumbs = lazy(() => import("../views/ui/Breadcrumbs"));
+const Log = lazy(() => import("../views/ui/Log.js"));
 
 /*****Routes******/
 
@@ -26,15 +26,15 @@ const ThemeRoutes = [
     children: [
       { path: "/", element: <Navigate to="/dashboard" /> },
       { path: "/dashboard", exact: true, element: <Dashboard /> },
-      { path: "/about", exact: true, element: <About /> },
-      { path: "/alerts", exact: true, element: <Alerts /> },
-      { path: "/badges", exact: true, element: <Badges /> },
+      { path: "/member", exact: true, element: <Member /> },
+      { path: "/auth", exact: true, element: <Auth /> },
+      { path: "/menu", exact: true, element: <Menu /> },
       { path: "/buttons", exact: true, element: <Buttons /> },
-      { path: "/cards", exact: true, element: <Cards /> },
+      { path: "/code", exact: true, element: <Code /> },
       { path: "/grid", exact: true, element: <Grid /> },
       { path: "/table", exact: true, element: <Tables /> },
       { path: "/forms", exact: true, element: <Forms /> },
-      { path: "/breadcrumbs", exact: true, element: <Breadcrumbs /> },
+      { path: "/log", exact: true, element: <Log /> },
     ],
   },
 ];

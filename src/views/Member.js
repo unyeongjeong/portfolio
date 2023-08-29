@@ -2,7 +2,7 @@ import { Row, Col, Card, CardBody, CardTitle, Button } from "reactstrap";
 import ProjectTables from "../components/dashboard/ProjectTable";
 import Paging from "../components/dashboard/Paging";
 
-const About = () => {
+const Member = () => {
   return (
     <Row>
       <Col>
@@ -46,4 +46,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Member;
